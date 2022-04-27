@@ -1,32 +1,36 @@
 import { Grid, Grow } from "@mui/material";
 import Image from "next/image";
-import React, { useRef } from "react";
-import useScrollReveal from "../utils/Hooks";
+import React from "react";
 import cloud_prac from "../public/cloud_prac.png";
 import myPhoto from "../public/linkedinimage.jpg";
 import ML from "../public/ML.png";
 import SAA from "../public/SAA.png";
+
+
+
 const Aboutme = () => {
-    const refToComponent = useRef(null);
-    // useScrollReveal(refToComponent);
-    //style={{ position: "fixed" }}>
     return (
-        <Grid item xs={12}>
+        <Grid container>
+            <Grid item xs={12}>
             <Grow in={true} style={{ transformOrigin: "1 2 1" }} timeout={2000}>
-                <div>
                     <Image src={myPhoto} />
-                </div>
             </Grow>
+            </Grid>
+            <Grid item xs={3}>
             <Grow in={true} style={{ transformOrigin: "1 2 1" }} timeout={2000}>
                 <div>
                     <Image src={cloud_prac} />
                 </div>
             </Grow>
+            </Grid>
+            <Grid item xs={3}>
             <Grow in={true} style={{ transformOrigin: "1 2 1" }} timeout={2000}>
                 <div>
                     <Image src={ML} />
                 </div>
             </Grow>
+            </Grid>
+            <Grid item xs={3}>
             {/* <div ref={refToComponent}> */}
             <div>
                 <Grow
@@ -39,6 +43,7 @@ const Aboutme = () => {
                     </div>
                 </Grow>
             </div>
+            </Grid>
         </Grid>
     );
 };

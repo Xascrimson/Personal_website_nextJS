@@ -22,10 +22,10 @@ const Home: NextPage = () => {
 
             <main className={styles.main}>
                 <Grid container spacing={2}>
-                    <Grid container direction={'column'} xs={8}>
+                    <Grid container direction={'column'} item xs={8}>
                         <IntroTable />
                     </Grid>
-                    <Grid container direction={'column'} xs={4}>
+                    <Grid container direction={'column'} item xs={4}>
                         <Aboutme />
                     </Grid>
                 </Grid>
