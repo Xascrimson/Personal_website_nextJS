@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} >
                     <Grid container direction={'column'} item xs={8}>
                         <IntroTable />
                     </Grid>
